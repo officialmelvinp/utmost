@@ -17,16 +17,20 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Hero image - Shows first on mobile, second on desktop */}
               <div className="relative order-1 lg:order-2">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
-  <Image
-  src="/images/bbu.png"
-  alt="Professional nurse providing compassionate care to elderly patient at home"
-  className="w-full h-auto rounded-2xl shadow-2xl"
-  priority
-  width={800}
-  height={600}
-/>
-</div>
+                <div className="relative w-full">
+                  <Image
+                    src="/images/bbu.png"
+                    alt="Professional nurse providing compassionate care to elderly patient at home"
+                    className="w-full h-auto rounded-2xl shadow-2xl object-cover"
+                    priority
+                    width={800}
+                    height={600}
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                    }}
+                  />
+                </div>
                 {/* Decorative elements - hidden on mobile */}
                 <div className="absolute -top-4 -right-4 w-16 h-16 md:w-24 md:h-24 bg-purple-200 rounded-full opacity-60 hidden md:block"></div>
                 <div className="absolute -bottom-6 -left-6 w-20 h-20 md:w-32 md:h-32 bg-red-200 rounded-full opacity-40 hidden md:block"></div>
@@ -66,7 +70,7 @@ export default function Home() {
 
                   <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                     <a
-                      href="tel:404-449-6952"
+                      href="tel:678-740-1973"
                       className="bg-purple-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-purple-700 transition-colors flex items-center justify-center space-x-2 text-base md:text-lg font-semibold"
                     >
                       <Phone size={20} />
