@@ -19,7 +19,7 @@ export default function Home() {
               <div className="relative order-1 lg:order-2">
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
                   <Image
-                    src="/images/sade1.jpg"
+                    src="/images/home.jpeg"
                     alt="Professional nurse providing compassionate care to elderly patient at home"
                     fill
                     className="object-cover"
@@ -69,7 +69,7 @@ export default function Home() {
                       className="bg-purple-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-purple-700 transition-colors flex items-center justify-center space-x-2 text-base md:text-lg font-semibold"
                     >
                       <Phone size={20} />
-                      <span>Call (404) 449-6952</span>
+                      <span>Call (678) 740-1973</span>
                     </a>
                     <Link
                       href="/our-services"
@@ -82,9 +82,7 @@ export default function Home() {
 
                   {/* Doctor's Name */}
                   <div className="border-t border-gray-200 pt-6">
-                    <p className="text-sm text-gray-500 mb-1">Founded & Led by</p>
-                    <p className="text-xl md:text-2xl font-semibold text-gray-800">Dr. Sade Akintunde</p>
-                    <p className="text-sm text-purple-600 font-medium">Healthcare Professional & Founder</p>
+                    <p className="text-xl text-purple-600 font-medium">Home Healthcare & Services</p>
                   </div>
                 </div>
               </div>

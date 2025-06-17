@@ -32,7 +32,7 @@ export default function ContactPage() {
     <div className="min-h-screen">
       <Header />
 
-      {/* Hero Section - Mobile Optimized */}
+      {/* Hero Section */}
       <section className="bg-gradient-to-br from-purple-50 to-red-50 py-12 md:py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4 md:mb-6">Contact Us</h1>
@@ -42,7 +42,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Information - Mobile Optimized */}
+      {/* Contact Section */}
       <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
@@ -58,16 +58,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-1">Phone Numbers</h3>
                     <div className="space-y-1">
-                      <a
-                        href="tel:404-449-6952"
-                        className="block text-gray-600 hover:text-purple-600 transition-colors"
-                      >
+                      <a href="tel:404-449-6952" className="block text-gray-600 hover:text-purple-600 transition-colors">
                         Office: (404) 449-6952
                       </a>
-                      <a
-                        href="tel:678-740-1973"
-                        className="block text-gray-600 hover:text-purple-600 transition-colors"
-                      >
+                      <a href="tel:678-740-1973" className="block text-gray-600 hover:text-purple-600 transition-colors">
                         Mobile: (678) 740-1973
                       </a>
                     </div>
@@ -110,30 +104,12 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-
-              {/* WhatsApp Contact - Mobile Optimized */}
-              <div className="mt-8 p-4 md:p-6 bg-green-50 rounded-lg border border-green-200">
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">Quick Contact via WhatsApp</h3>
-                <p className="text-gray-600 mb-4 text-sm md:text-base">
-                  For immediate assistance, you can reach us on WhatsApp:
-                </p>
-                <a
-                  href="https://wa.me/16787401973"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-green-600 text-white px-4 md:px-6 py-3 rounded-lg hover:bg-green-700 transition-colors inline-flex items-center space-x-2 text-sm md:text-base w-full md:w-auto justify-center md:justify-start"
-                >
-                  <span>💬</span>
-                  <span>Message us on WhatsApp</span>
-                </a>
-              </div>
             </div>
 
-            {/* Contact Form - Mobile Optimized */}
+            {/* Contact Form */}
             <div className="order-1 lg:order-2 bg-gray-50 p-4 md:p-8 rounded-lg">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-6">Send us a Message</h2>
 
-              {/* Success Message */}
               {submitResult?.success && (
                 <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-start space-x-3">
                   <CheckCircle className="text-green-600 flex-shrink-0 mt-0.5" size={20} />
@@ -141,7 +117,6 @@ export default function ContactPage() {
                 </div>
               )}
 
-              {/* Error Message */}
               {submitResult && !submitResult.success && (
                 <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start space-x-3">
                   <AlertCircle className="text-red-600 flex-shrink-0 mt-0.5" size={20} />
@@ -161,7 +136,7 @@ export default function ContactPage() {
                       name="firstName"
                       required
                       disabled={isSubmitting}
-                      className="w-full px-3 md:px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm md:text-base disabled:opacity-50"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 text-sm disabled:opacity-50"
                     />
                   </div>
                   <div>
@@ -174,7 +149,7 @@ export default function ContactPage() {
                       name="lastName"
                       required
                       disabled={isSubmitting}
-                      className="w-full px-3 md:px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm md:text-base disabled:opacity-50"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 text-sm disabled:opacity-50"
                     />
                   </div>
                 </div>
@@ -189,7 +164,7 @@ export default function ContactPage() {
                     name="email"
                     required
                     disabled={isSubmitting}
-                    className="w-full px-3 md:px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm md:text-base disabled:opacity-50"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 text-sm disabled:opacity-50"
                   />
                 </div>
 
@@ -202,7 +177,7 @@ export default function ContactPage() {
                     id="phone"
                     name="phone"
                     disabled={isSubmitting}
-                    className="w-full px-3 md:px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm md:text-base disabled:opacity-50"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 text-sm disabled:opacity-50"
                   />
                 </div>
 
@@ -214,7 +189,7 @@ export default function ContactPage() {
                     id="service"
                     name="service"
                     disabled={isSubmitting}
-                    className="w-full px-3 md:px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm md:text-base disabled:opacity-50"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 text-sm disabled:opacity-50"
                   >
                     <option value="">Select a service</option>
                     <option value="skilled-nursing">Skilled Nursing Services</option>
@@ -234,7 +209,7 @@ export default function ContactPage() {
                     rows={4}
                     required
                     disabled={isSubmitting}
-                    className="w-full px-3 md:px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-sm md:text-base disabled:opacity-50"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 text-sm disabled:opacity-50"
                     placeholder="Please describe your healthcare needs or any questions you have..."
                   ></textarea>
                 </div>
@@ -242,13 +217,13 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-purple-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-purple-700 transition-colors font-semibold text-sm md:text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold text-sm disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
               </form>
 
-              <p className="text-xs md:text-sm text-gray-500 mt-4">
+              <p className="text-xs text-gray-500 mt-4">
                 * Required fields. We&apos;ll respond to your inquiry within 24 hours.
               </p>
             </div>
@@ -256,52 +231,42 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Payment Information */}
+      {/* Payment Info */}
       <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Payment Options</h2>
-            <p className="text-base md:text-lg text-gray-600">
-              We accept various payment methods to make our services accessible
-            </p>
+            <p className="text-base text-gray-600">We accept various payment methods to make our services accessible</p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Private Pay</h3>
-                <p className="text-gray-600">We accept private payment for all our services.</p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Insurance Plans</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Centipede</li>
-                  <li>• Univita - Peach State Plan</li>
-                  <li>• United Healthcare</li>
-                  <li>• Special State/Federal waiver programs</li>
-                  <li>• SOURCE, CCSP and ICWP</li>
-                </ul>
-              </div>
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Private Pay</h3>
+              <p className="text-gray-600">We accept private payment for all our services.</p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Insurance Plans</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>• Centipede</li>
+                <li>• Univita - Peach State Plan</li>
+                <li>• United Healthcare</li>
+                <li>• Special State/Federal waiver programs</li>
+                <li>• SOURCE, CCSP and ICWP</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Service Areas - Mobile Optimized */}
+      {/* Service Areas */}
       <section className="py-12 md:py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">We Serve These Areas</h2>
-            <p className="text-base md:text-lg text-gray-600">
-              Licensed and insured to serve the following Georgia counties
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 max-w-4xl mx-auto">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">We Serve These Areas</h2>
+          <p className="text-base text-gray-600 mb-8">Licensed and insured to serve the following Georgia counties</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 max-w-4xl mx-auto">
             {["Clayton", "Cobb", "Coweta", "DeKalb", "Fulton", "Gwinnett", "Hall", "Henry", "Walton"].map((county) => (
-              <div key={county} className="bg-white p-3 md:p-4 rounded-lg text-center shadow-sm">
-                <p className="font-semibold text-gray-800 text-sm md:text-base">{county} County</p>
+              <div key={county} className="bg-white p-3 rounded-lg text-center shadow-sm">
+                <p className="font-semibold text-gray-800 text-sm">{county} County</p>
               </div>
             ))}
           </div>

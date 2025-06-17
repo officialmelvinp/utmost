@@ -13,8 +13,8 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 md:space-x-3">
-            <div className="relative w-10 h-10 md:w-12 md:h-12">
+          <Link href="/" className="flex items-center space-x-3 md:space-x-4">
+            <div className="relative w-16 h-16 md:w-20 md:h-20">
               <Image
                 src="/images/logo1.jpeg"
                 alt="Utmost Healthcare Solutions LLC Logo"
@@ -25,7 +25,7 @@ export default function Header() {
             </div>
             <div>
               <h1 className="text-lg md:text-xl font-bold text-gray-800">Utmost Healthcare</h1>
-              <p className="text-xs md:text-sm text-purple-600">Solutions LLC</p>
+              <p className="text-sm md:text-base text-purple-600 font-medium">Solutions, LLC</p>
             </div>
           </Link>
 
@@ -44,7 +44,7 @@ export default function Header() {
               Contact
             </Link>
             <a
-              href="tel:404-449-6952"
+              href="tel: 678-740-1973"
               className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors flex items-center space-x-2"
             >
               <Phone size={16} />
@@ -91,7 +91,7 @@ export default function Header() {
                 Contact
               </Link>
               <a
-                href="tel:404-449-6952"
+                href="tel: 678-740-1973"
                 className="bg-purple-600 text-white px-4 py-3 rounded-lg hover:bg-purple-700 transition-colors flex items-center justify-center space-x-2 text-sm font-semibold mt-2"
               >
                 <Phone size={16} />
