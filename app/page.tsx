@@ -87,7 +87,7 @@ export default function Home() {
 
                   {/* Doctor's Name */}
                   <div className="border-t border-gray-200 pt-6">
-                    <p className="text-xl text-purple-600 font-medium">Home Healthcare & Services</p>
+                    <p className="text-xl text-purple-600 font-medium">Home Healthcare Services</p>
                   </div>
                 </div>
               </div>
