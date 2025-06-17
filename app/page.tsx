@@ -16,7 +16,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Left side - Text content */}
-              <div className="max-w-2xl order-2 lg:order-1 text-center lg:text-left">
+              <div className="max-w-2xl order-1 lg:order-1 text-center lg:text-left">
                 <div className="mb-8">
                   {/* Company Logo - Increased Size */}
                   <div className="relative w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto lg:mx-0 mb-6">
@@ -74,7 +74,7 @@ export default function Home() {
               </div>
 
               {/* Right side - Hero image */}
-              <div className="relative order-1 lg:order-2">
+              <div className="relative order-2 lg:order-2">
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
                   <Image
                     src="/images/sade1.jpg"
