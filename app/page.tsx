@@ -18,14 +18,15 @@ export default function Home() {
               {/* Hero image - Shows first on mobile, second on desktop */}
               <div className="relative order-1 lg:order-2">
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
-                  <Image
-                    src="/images/home.jpeg"
-                    alt="Professional nurse providing compassionate care to elderly patient at home"
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                </div>
+  <Image
+  src="/images/bbu.png"
+  alt="Professional nurse providing compassionate care to elderly patient at home"
+  className="w-full h-auto rounded-2xl shadow-2xl"
+  priority
+  width={800}
+  height={600}
+/>
+</div>
                 {/* Decorative elements - hidden on mobile */}
                 <div className="absolute -top-4 -right-4 w-16 h-16 md:w-24 md:h-24 bg-purple-200 rounded-full opacity-60 hidden md:block"></div>
                 <div className="absolute -bottom-6 -left-6 w-20 h-20 md:w-32 md:h-32 bg-red-200 rounded-full opacity-40 hidden md:block"></div>

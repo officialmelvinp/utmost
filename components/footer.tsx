@@ -19,7 +19,7 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-lg font-bold">Utmost Healthcare</h3>
-                <p className="text-purple-300">Solutions LLC</p>
+                <p className="text-purple-300">Solutions, LLC</p>
               </div>
             </div>
             <p className="text-gray-300 mb-4">Always Caring. Always Here.</p>
@@ -34,10 +34,11 @@ export default function Footer() {
                 <Phone size={16} className="text-purple-400" />
                 <div className="text-sm">
                   <a href="tel:404-449-6952" className="block hover:text-purple-300 transition-colors">
-                    Office: (404) 449-6952
+                    Office: (678) 740-1973
                   </a>
                   <a href="tel:678-740-1973" className="block hover:text-purple-300 transition-colors">
-                    Mobile: (678) 740-1973
+                    Mobile: (404) 449-6952
+
                   </a>
                 </div>
               </div>

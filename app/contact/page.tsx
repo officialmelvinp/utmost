@@ -59,10 +59,10 @@ export default function ContactPage() {
                     <h3 className="text-lg font-semibold text-gray-800 mb-1">Phone Numbers</h3>
                     <div className="space-y-1">
                       <a href="tel:404-449-6952" className="block text-gray-600 hover:text-purple-600 transition-colors">
-                        Office: (404) 449-6952
+                        Office: (678) 740-1973
                       </a>
                       <a href="tel:678-740-1973" className="block text-gray-600 hover:text-purple-600 transition-colors">
-                        Mobile: (678) 740-1973
+                        Mobile: (404) 449-6952
                       </a>
                     </div>
                   </div>
