@@ -18,8 +18,8 @@ export default function Home() {
               {/* Left side - Text content */}
               <div className="max-w-2xl order-1 lg:order-1 text-center lg:text-left">
                 <div className="mb-8">
-                  {/* Company Logo - Increased Size */}
-                  <div className="relative w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto lg:mx-0 mb-6">
+                  {/* Company Logo - Hidden on mobile, visible on md and up */}
+                  <div className="relative w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto lg:mx-0 mb-6 hidden md:block">
                     <Image
                       src="/images/logo1.jpeg"
                       alt="Utmost Healthcare Solutions LLC Logo"
