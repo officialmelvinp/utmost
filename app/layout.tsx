@@ -6,6 +6,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.urutmost.com"), // Add this line
   title: "Utmost Healthcare Solutions LLC - Home Healthcare Services in Georgia",
   description:
     "Professional home healthcare services in Georgia. Skilled nursing, personal care, and companion services. Licensed and insured with 25+ years experience.",
