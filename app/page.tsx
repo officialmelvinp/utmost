@@ -12,7 +12,7 @@ export default function Home() {
 
       <main>
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-purple-50 to-red-50 py-20">
+        <section className="bg-gradient-to-br from-purple-50 to-red-50 py-10 lg:py-20">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Hero image - Shows first on mobile, second on desktop */}
