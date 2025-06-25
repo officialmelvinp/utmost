@@ -100,11 +100,11 @@ export default function Home() {
         </section>
 
         {/* Mobile Logo & Services Section - Enhanced for mobile */}
-        <section className="bg-gradient-to-b from-white to-purple-50 py-8 lg:hidden">
+        <section className="bg-gradient-to-b from-white to-purple-50 py-2 lg:hidden">
           <div className="container mx-auto px-4">
             {/* Larger Logo */}
-            <div className="flex justify-center mb-2">
-              <div className="relative w-full h-40 max-w-md">
+            <div className="mb-2">
+              <div className="relative w-full h-40">
                 <Image
                   src="/images/logo1.jpeg"
                   alt="Utmost Healthcare Solutions LLC Logo"
