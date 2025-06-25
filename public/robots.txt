@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.urutmost.com/sitemap.xml
+Sitemap: 
 
 # Allow all search engines to crawl the site
 # Block access to admin areas (if any)
