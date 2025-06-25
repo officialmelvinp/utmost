@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import { ArrowRight, Phone } from "lucide-react"
+import { ArrowRight, Phone, Heart, Shield, Users } from "lucide-react"
 
 export default function Home() {
   return (
@@ -85,9 +85,13 @@ export default function Home() {
                     </Link>
                   </div>
 
-                  {/* Doctor's Name */}
+                  {/* Custom Healthcare Services Badge */}
                   <div className="border-t border-gray-200 pt-6">
-                    <p className="text-xl text-purple-600 font-medium">Home Healthcare Services</p>
+                    <div className="inline-flex items-center bg-gradient-to-r from-purple-100 to-purple-50 border border-purple-200 rounded-full px-6 py-3 shadow-sm">
+                      <Heart className="w-5 h-5 text-purple-600 mr-2" />
+                      <span className="text-lg font-semibold text-purple-700">Home Healthcare Services</span>
+                      <Shield className="w-5 h-5 text-purple-600 ml-2" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -95,11 +99,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Mobile Logo Section - Only visible on mobile, centered above footer */}
-        <section className="bg-white py-12 lg:hidden">
+        {/* Mobile Logo & Services Section - Enhanced for mobile */}
+        <section className="bg-gradient-to-b from-white to-purple-50 py-8 lg:hidden">
           <div className="container mx-auto px-4">
-            <div className="flex justify-center">
-              <div className="relative w-32 h-32">
+            {/* Larger Logo */}
+            <div className="flex justify-center mb-6">
+              <div className="relative w-40 h-40">
                 <Image
                   src="/images/logo1.jpeg"
                   alt="Utmost Healthcare Solutions LLC Logo"
@@ -107,6 +112,34 @@ export default function Home() {
                   className="object-contain"
                 />
               </div>
+            </div>
+
+            {/* Service Highlights */}
+            <div className="grid grid-cols-1 gap-4 max-w-sm mx-auto">
+              <div className="flex items-center justify-center bg-white rounded-lg p-4 shadow-sm border border-purple-100">
+                <Users className="w-6 h-6 text-purple-600 mr-3" />
+                <span className="text-gray-700 font-medium">25+ Years Experience</span>
+              </div>
+              <div className="flex items-center justify-center bg-white rounded-lg p-4 shadow-sm border border-purple-100">
+                <Heart className="w-6 h-6 text-purple-600 mr-3" />
+                <span className="text-gray-700 font-medium">Compassionate Care</span>
+              </div>
+              <div className="flex items-center justify-center bg-white rounded-lg p-4 shadow-sm border border-purple-100">
+                <Shield className="w-6 h-6 text-purple-600 mr-3" />
+                <span className="text-gray-700 font-medium">Licensed & Insured</span>
+              </div>
+            </div>
+
+            {/* Call to Action */}
+            <div className="text-center mt-6">
+              <p className="text-gray-600 mb-4">Ready to get started?</p>
+              <a
+                href="tel:678-740-1973"
+                className="inline-flex items-center bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold"
+              >
+                <Phone size={18} className="mr-2" />
+                Call Now
+              </a>
             </div>
           </div>
         </section>
