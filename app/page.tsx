@@ -103,8 +103,8 @@ export default function Home() {
         <section className="bg-gradient-to-b from-white to-purple-50 py-8 lg:hidden">
           <div className="container mx-auto px-4">
             {/* Larger Logo */}
-            <div className="flex justify-center mb-6">
-              <div className="relative w-40 h-40">
+            <div className="flex justify-center mb-2">
+              <div className="relative w-full h-40 max-w-md">
                 <Image
                   src="/images/logo1.jpeg"
                   alt="Utmost Healthcare Solutions LLC Logo"
